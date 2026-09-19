@@ -13,7 +13,7 @@ A dashboard for searching GitHub repositories, tracking your favorites, and keep
 ## Getting started
 
 ```bash
-npm install --legacy-peer-deps
+npm install
 npx nx serve web
 ```
 
@@ -24,7 +24,7 @@ npx nx run-many -t typecheck lint test   # checks
 npx nx build web                          # production build
 ```
 
-The `--legacy-peer-deps` flag is needed because of a peer-dep resolution issue in vitest's optional dependencies, not because of anything in this project's own deps.
+Requires npm 12+ (older npm versions have a resolver bug that crashes on vitest's optional peer dependencies during a first install).
 
 ## Structure
 

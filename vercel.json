@@ -1,5 +1,5 @@
 {
   "buildCommand": "npx nx build web",
-  "installCommand": "npm install --legacy-peer-deps",
+  "installCommand": "npx -y npm@12 install",
   "outputDirectory": "apps/web/dist"
 }
